@@ -1,5 +1,5 @@
 const enviarPergunta = async() => {
-    const texto = document.querySelector("#pergunta")
+    const pergunta = document.querySelector("#pergunta")
 
     const spinner = document.querySelector("#spinner")
      spinner.style.display = "block";
