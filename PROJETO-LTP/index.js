@@ -14,9 +14,17 @@ const enviarPergunta = async() => {
     const spinner = document.querySelector("#spinner")
      spinner.style.display = "block";
 
-    const connect = new Connect(pergunta.value);
+    const paragrafo = document.createElement("p");
+    paragrafo.textContent = pergunta.value;
 
+    const content = document.querySelector(".content");
+    content.appendChild(paragrafo);
+
+    pergunta.value = "";
+
+    const connect = new Connect(pergunta.value);
     const resposta = await connect.enviarPergunta();
+
 
     spinner.style.display = "none";
 
