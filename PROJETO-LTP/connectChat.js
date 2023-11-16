@@ -1,5 +1,5 @@
 async function connectApiChatGPT(pergunta) {
-    const apiKey = "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";
+    const apiKey = "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";
     try {
       const response = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
