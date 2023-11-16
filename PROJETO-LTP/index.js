@@ -16,7 +16,6 @@ const enviarPergunta = async() => {
 
     const paragrafo = document.createElement("p");
     paragrafo.textContent = pergunta.value;
-
     const content = document.querySelector(".content");
     content.appendChild(paragrafo);
 
@@ -25,6 +24,11 @@ const enviarPergunta = async() => {
     const connect = new Connect(pergunta.value);
     const resposta = await connect.enviarPergunta();
 
+
+    const perguntinha = document.createElement("p");
+    perguntinha.textContent = resposta;
+    content.appendChild(perguntinha)
+   
 
     spinner.style.display = "none";
 
