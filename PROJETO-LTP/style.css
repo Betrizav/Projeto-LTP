@@ -29,7 +29,22 @@ animation: pisca .7s infinite;
   text-align: center;
 }
 input{
-  
+  background-color: #2E8B57; 
+    flex: 1; 
+    padding: 8px; 
+    border: 1px solid 	#006400; 
+    border-radius: 7px; 
+    width: 200px; 
+    margin: 7px;
+    color: aliceblue;
+}
+h1{
+  color: #2F4F4F;
+  font-family: Andale Mono, monospace;
+}
+.input::placeholder {
+  color: white; 
+  font-family: Andale Mono, monospace; 
 }
 /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
 
