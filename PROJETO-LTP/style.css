@@ -20,8 +20,16 @@ opacity: 1;
 animation: pisca .7s infinite;
 }
 #spinner{
+  margin: 0 auto;
+  margin-top: 17px;
+}
+.bloco{
   align-items: center;
-  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+input{
+  
 }
 /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
 

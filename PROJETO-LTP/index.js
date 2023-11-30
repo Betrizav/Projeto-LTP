@@ -19,7 +19,6 @@ class Connect{
 }
 
 }
-
 const enviarPergunta = async() => {
     const pergunta = document.querySelector("#pergunta")
 
