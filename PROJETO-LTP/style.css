@@ -23,11 +23,6 @@ animation: pisca .7s infinite;
   margin: 0 auto;
   margin-top: 17px;
 }
-.bloco{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 input{
   background-color: #2E8B57; 
     flex: 1; 
@@ -37,6 +32,7 @@ input{
     width: 200px; 
     margin: 7px;
     color: aliceblue;
+    font-size: 11px;
 }
 h1{
   color: #2F4F4F;
@@ -46,6 +42,27 @@ h1{
   color: white; 
   font-family: Andale Mono, monospace; 
 }
+
+button{
+  background-color:#006400;
+  border-radius: 7px;
+  color: white;
+  padding: 14px 28px;
+  font-size: 11px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2E8B57;
+  color: white;
+}
+img{
+  margin-top: 0%;
+  margin-left: 0%;
+  left: 10px;
+}
+
 /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
 
 @keyframes pisca{
