@@ -6,6 +6,18 @@ class Connect{
     const pergunta = connectApiChatGPT(this.pergunta);
     return pergunta;
   }
+  static typeWrite(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = ' ';
+    textoArray.forEach(function (letra, i) {
+
+            setTimeout(function () {
+                    elemento.innerHTML += letra;
+            }, 75 * i)
+
+    });
+}
+
 }
 
 const enviarPergunta = async() => {
@@ -22,6 +34,8 @@ const enviarPergunta = async() => {
     pergunta.value = "";
 
     const connect = new Connect(pergunta.value);
+    connect.typeWrite(paragrafo);
+
     const resposta = await connect.enviarPergunta();
 
 
