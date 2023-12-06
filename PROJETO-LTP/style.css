@@ -2,6 +2,7 @@ body{
      text-align: center;
       align-items: center;
     justify-content: center;
+    background-color: #dbead5;
 }
 .container{
   background-color: #000;
@@ -27,7 +28,7 @@ input{
   background-color: #2E8B57; 
     flex: 1; 
     padding: 8px; 
-    border: 1px solid 	#006400; 
+    border: 1px solid 	#2E8B57; 
     border-radius: 7px; 
     width: 200px; 
     margin: 7px;
@@ -44,7 +45,7 @@ h1{
 }
 
 button{
-  background-color:#006400;
+  background-color:#2E8B57;
   border-radius: 7px;
   color: white;
   padding: 14px 28px;
@@ -58,7 +59,8 @@ button{
   color: white;
 }
 img{
-  margin-top: 0%;
+
+  margin-top: 19%;
   margin-left: 0%;
   left: 10px;
 }
@@ -72,7 +74,14 @@ ul {
 }
 .nav{
   background-color: #000000;
-  width: 70px;
+  width: 270px;
+  height: 700px;
+  margin-left: 0px;
+  display: inline-block;
+}
+.bia{
+  display: inline-block;
+
 }
 /* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
 
